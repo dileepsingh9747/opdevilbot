@@ -11,7 +11,7 @@ server = Flask(__name__)
 
 @bot.message_handler(commands=['start'])
 def start(m):
-    bot.send_message(m.chat.id,text='Hello, ' + 'kya kr raha h')
+    bot.send_message(m.chat.id,text='chup ker maderchod')
 
 
 @bot.message_handler(func=lambda message: True, content_types=['text'])
