@@ -28,7 +28,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://akhilop/' + "1133710796:AAEST2xMvluqe1KHOZdyJKZ6qvadnBwT2ZQ")
+    bot.set_webhook(url='https://akhilop.herokuapp.com/' + "1133710796:AAEST2xMvluqe1KHOZdyJKZ6qvadnBwT2ZQ")
     return "!", 200
 
 
