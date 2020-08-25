@@ -4,7 +4,7 @@ from flask import Flask, request
 
 import telebot
 
-TOKEN = '1345444847:AAEl65PK-p3kDkp3ufhO4A-WiBq5lxn89g0'
+TOKEN = '1192026580:AAGXcSCrYNdt8KlbZMtKRHDjLgA0b5FzVik'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
@@ -28,7 +28,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://opakhilbot.herokuapp.com/' + "1345444847:AAEl65PK-p3kDkp3ufhO4A-WiBq5lxn89g0")
+    bot.set_webhook(url='https://paytmkibot.herokuapp.com/' + "1192026580:AAGXcSCrYNdt8KlbZMtKRHDjLgA0b5FzVik")
     return "!", 200
 
 
